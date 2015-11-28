@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+
+.row:before, .row:after  {
+  content: "";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+
+body {
+  background: url(../img/bg-404.jpg) no-repeat;
+  background-size: cover;
+  font-family: 'Fira Sans', sans-serif;
+  position: relative;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1024px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.main>.container {
+  position: relative;
+}
+
+.main__logo {
+  padding-top: 20px;
+  padding-bottom: 11px;
+  padding-left: 20px;
+}
+
+.main__desc {
+  font-size: 12px;
+  line-height: 15px;
+  color: #01718d;
+  max-width: 170px;
+  padding-left: 20px;
+  padding-bottom: 188px;
+}
+
+.main__granite-mountain {
+  max-width: 323px;
+  color: #fff;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 21px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 22px 22px 14px 17px;
+  background-color: rgba(1, 68, 100, .6);
+  position: absolute;
+  left: 12.1%;
+  top: 71px;
+}
+
+.main__granite-mountain:before {
+  content: '';
+  position: absolute;
+  left: 148px;
+  bottom: -17px;
+  width: 0px;
+  height: 0px;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 17px solid rgba(1, 68, 100, .9);
+}
+
+.main__granite-mountain span {
+  font-style: italic;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.main__page-404 {
+  color: #fff;
+  padding-bottom: 128px;
+}
+
+.page-404__number {
+  font-size: 141px;
+  font-weight: 500;
+}
+
+.main__page-404 span {
+  font-size: 48px;
+  line-height: 4px;
+  text-transform: uppercase;
+}
+
+.main__nav {
+  margin-bottom: 146px;
+}
+
+.main__nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.main__nav ul li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 30px;
+  position: relative;
+}
+
+.main__nav ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.main__nav ul li a:after {
+  position: absolute;
+  content: "";
+  height: 15px;
+  top: 1px;
+  right: -32px;
+  border: 2px solid #fff;
+}
+
+
+
+a.divide-none:after {
+  display: none;
+}
+
+.main__nav span {
+  border-bottom: 1px solid #fff;
+}
+
+.main__nav .btn-main {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: #020618;
+  font-size: 18px;
+  padding: 15px 40px 13px 65px;
+  background-color: #c79036;
+  border-radius: 25px;
+  position: relative;
+  transition: all 0.8s linear;
+}
+
+.main__nav .btn-main:hover {
+  background-color: #edbd6f;
+}
+
+.main__nav .btn-main:active {
+  background-color: #a57d3c;
+}
+
+.main__nav .btn-main:before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 12px;
+  background: url(../img/arrow.png) no-repeat;
+  left: 38px;
+  top: 19px;
+}
+/* Media */
+
+/*@media (min-width: 768px) and (max-width: 1024px) {
+  .main__granite-mountain {
+    left: 5%;
+  }
+}*/
+
+
+@media (min-width: 768px) {
+  .main__nav .btn-main {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+   .main__granite-mountain {
+    left: 11.5%;
+    top: 100px;
+  }
+
+  .main__nav .btn-main {
+    display: inline-block;
+  }
+
+  .main__nav .main__nav-list {
+    display: none;
+  }
+
+  .main__page-404 {
+    padding-bottom: 195px;
+  }
+
+    .main__desc {
+    padding-bottom: 314px;
+  }
+}
+
+@media (max-width: 540px) {
+  .page-404__number {
+    font-size: 110px;
+    font-weight: 400;
+  }
+
+  .main__page-404 span {
+    font-size: 29px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  .main__granite-mountain {
+    display: none;
+  }
+
+  .main__desc {
+    padding-bottom: 0;
+  }
+
+  .main__page-404 {
+    padding-bottom: 10px;
+  }
+
+  .main__nav .btn-main {
+    padding: 15px 20px 13px 45px;
+  }
+
+  .main__nav .btn-main:before {
+    left: 18px;
+    top: 18px;
+  }
+
+  .main__nav {
+    margin-bottom: 21px;
+  }
+
+}
+
+
+@media (max-width: 320px) {
+  .main__desc {
+    padding-bottom: 70px;
+  }
+
+  .main__page-404 {
+    padding-bottom: 48px;
+  }
+
+  .main__page-404 span {
+    font-size: 24px;
+  }
+}
